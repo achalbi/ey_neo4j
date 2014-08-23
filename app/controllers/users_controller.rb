@@ -1,18 +1,28 @@
 class UsersController < ApplicationController
 
+
   def login
     oauth = request.env["omniauth.auth"]
     @user = User.find_by_uid(oauth['uid'])
     #session['fb_auth'] = oauth
     session['fb_access_token'] = oauth['credentials']['token']
+    @user.fb_access_token = oauth['credentials']['token']
     session['fb_error'] = nil
 
-    unless @user
+
+    unless @user || @user.username.present?
       @user = User.create_with_omniauth(oauth)
     end
 
     sign_in @user
+    @graph = Koala::Facebook::API.new(@user.fb_access_token)
+    @friends = @graph.get_connections("me", "friends")
+    create_fb_friends @friends
     redirect_to root_path
+  end
+
+  def friends
+    @friends = current_user.friends.paginate(:page => 1, :per_page => 10)
   end
 
   # GET /users

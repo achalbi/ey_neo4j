@@ -10,13 +10,13 @@ html, body {
    font-size:13px;
 }
 
-a {
+/*a {
   color:#222222;
 }
 
 a:hover {
   text-decoration:none;
-}
+}*/
 
 hr {
   border-color:#dedede;
@@ -50,7 +50,7 @@ hr {
 }
 
 .full{
-	padding-top:70px;
+	padding-top:50px;
 }
 
 .box {
@@ -125,7 +125,7 @@ hr {
   background-color:#fff;
   color:#3B5999;
   height:28px;
-  width:28px;
+  width:34px;
   margin:9px;
   margin-right:2px;
   margin-left:15px;
@@ -284,4 +284,12 @@ small.text-muted {
   #sidebar, #sidebar a, #sidebar-footer a {
     padding-left:3px;
   }
+}
+
+
+/*custom bootstrap*/
+
+.navbar-form-o {
+-webkit-box-shadow: none!important;
+box-shadow: none!important;
 }

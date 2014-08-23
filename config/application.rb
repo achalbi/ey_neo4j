@@ -9,6 +9,7 @@ require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
 require 'ruby-debug'
+require 'neo4j-will_paginate'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line

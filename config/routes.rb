@@ -1,5 +1,4 @@
 Ey::Application.routes.draw do
-  resources :users
 
 
   # The priority is based upon order of creation:
@@ -8,11 +7,19 @@ Ey::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/help"
 
+  match '/signout', to: 'sessions#destroy'
 
    match '/auth/:provider/callback' => 'users#login'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root to: 'static_pages#home'
+
+  resources :users do
+    collection do
+      get :friends
+    end
+  end
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
