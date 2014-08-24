@@ -4,6 +4,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-require 'neo4j/tasks/neo4j_server'
+#require 'neo4j/tasks/neo4j_server'
 
 Ey::Application.load_tasks
