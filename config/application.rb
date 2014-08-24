@@ -11,6 +11,7 @@ require "rails/test_unit/railtie"
 require 'ruby-debug'
 require 'neo4j-will_paginate'
 
+#require 'neo4j/rails/ha_console/railtie' if Rails.env.development?
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
@@ -55,7 +56,14 @@ module Ey
     end
 
     # Configure where the neo4j database should exist
-    config.neo4j.storage_path = "#{config.root}/db/neo4j-#{Rails.env}"
+    #config.neo4j.storage_path = "#{config.root}/db/neo4j-#{Rails.env}"  unless Rails.env.development?
+
+    #config.neo4j.session_type = :embeddable_db
+    #config.neo4j.session_path = ENV['GRAPHENEDB_URL'] || "#{config.root}/db/neo4j"
+    #config.neo4j.storage_path = "#{config.root}/db/neo4j-#{Rails.env}"
+    #config.neo4j.timestamps = false  # disable automatic timestamps on updated_at and created_at properties
+    config.neo4j.session_type = :server_db
+    config.neo4j.session_path = ENV['GRAPHENEDB_URL'] || 'http://localhost:7474'
 
 
     # Enable escaping HTML in JSON.

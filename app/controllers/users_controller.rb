@@ -17,6 +17,7 @@ class UsersController < ApplicationController
     sign_in @user
     @graph = Koala::Facebook::API.new(@user.fb_access_token)
     @friends = @graph.get_connections("me", "friends")
+    debugger
     create_fb_friends @friends
     sign_in @user
     redirect_to root_path

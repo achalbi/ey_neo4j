@@ -46,6 +46,10 @@ end
 gem "neo4j", ">= 2.2.3"
 gem "neo4j-will_paginate"
 
+gem 'neo4j-community'
+gem 'neo4j-advanced'
+gem 'neo4j-enterprise'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
