@@ -26,7 +26,7 @@ class User < Neo4j::Rails::Model
       user.username = auth['info']['nickname']
       user.email = user_details['email']
       user.gender = user_details['gender']
-      user.dob = DateTime.parse(user_details['birthday'])
+      #user.dob = DateTime.parse(user_details['birthday'])
       user.remember_token = SecureRandom.urlsafe_base64
     end
 
