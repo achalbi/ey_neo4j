@@ -17,7 +17,6 @@ class User < Neo4j::Rails::Model
   has_n(:friends).to(User).relationship(Friend)
 
   def self.create_with_omniauth(auth)
-    puts auth.to_s
     create! do |user|
       user_details = auth['extra']['raw_info']
       user.uid = auth["uid"]
