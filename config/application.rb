@@ -8,7 +8,7 @@ require "active_resource/railtie"
 require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
-require 'ruby-debug'
+#require 'ruby-debug'
 require 'neo4j-will_paginate'
 
 #require 'neo4j/rails/ha_console/railtie' if Rails.env.development?
