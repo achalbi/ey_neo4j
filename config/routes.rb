@@ -16,7 +16,7 @@ Ey::Application.routes.draw do
 
   resources :users do
     collection do
-      get :friends
+      get :friends, :page_friends
     end
   end
 

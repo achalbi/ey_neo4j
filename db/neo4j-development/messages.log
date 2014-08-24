@@ -15343,3 +15343,991 @@ Storage files: (filename : modification date - size)
 2014-08-23 06:00:11.493+0000 INFO  [org.neo4j]: GC Monitor started. 
 2014-08-23 06:00:11.503+0000 INFO  [org.neo4j]: Database is now ready
 2014-08-23 06:00:12.351+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 356ms [total block time: 0.356s]
+2014-08-23 06:15:22.436+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-08-23 06:15:22.439+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=29M
+    neostore.nodestore.db.mapped_memory=8M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=36M
+    neostore.propertystore.db.strings.mapped_memory=25M
+    store_dir=C:/Sites/ey/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=28M
+    migration_thread=false
+    enable_rules=true
+    storage_path=C:/Sites/ey/db/neo4j-development
+2014-08-23 06:15:22.451+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2014-08-23 06:15:22.453+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 3.89 GB
+    Free Physical memory: 1.11 GB
+    Committed virtual memory: 195.93 MB
+    Total swap space: 4.00 GB
+    Free swap space: 3.20 GB
+2014-08-23 06:15:22.458+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 41.00 MB
+    Total memory: 139.16 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen, Perm Gen [shared-ro], Perm Gen [shared-rw]]
+    Memory Pool: Code Cache (Non-heap memory): committed=5.91 MB, used=5.87 MB, max=32.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=38.50 MB, used=20.51 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=4.75 MB, used=3.87 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=95.91 MB, used=73.77 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=21.00 MB, used=20.86 MB, max=64.00 MB, threshold=0.00 B
+    Memory Pool: Perm Gen [shared-ro] (Non-heap memory): committed=10.00 MB, used=4.20 MB, max=10.00 MB, threshold=0.00 B
+    Memory Pool: Perm Gen [shared-rw] (Non-heap memory): committed=12.00 MB, used=6.30 MB, max=12.00 MB, threshold=0.00 B
+2014-08-23 06:15:22.464+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows 8; version: 6.2; arch: x86; cpus: 4
+    Process id: 9896@Achal
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Calcutta
+2014-08-23 06:15:22.467+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) Client VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.65-b04
+    JIT compiler: HotSpot Client Compiler
+    VM Arguments: [-Djdk.home=, -Djruby.home=C:\Users\achal-pc\.pik\rubies\JRuby-1713, -Djruby.script=jruby, -Djruby.shell=cmd.exe, -Djffi.boot.library.path=C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\i386-Windows;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\x86_64-Windows, -Xmx500m, -Xss2048k, -Xbootclasspath/a:C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jruby.jar]
+2014-08-23 06:15:22.468+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] C:\Program Files (x86)\Java\jre7\classes
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cgeronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cscala-library-2.10.0.jar
+     [loader.1] file:/C:/Sites/ey/
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/kryptcore.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunpkcs11.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-graph-matching-1.9.5.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\resources.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/localedata.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/dnsns.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunmscapi.jar
+     [bootstrap] C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jruby.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Clucene-core-3.6.2.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-kernel-1.9.5.jar
+     [classpath] C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip
+     [loader.1] file:/C:/Program%20Files%20(x86)/QuickTime/QTSystem/QTJava.zip
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Ctherubyrhino_jar-1.7.4%5Cjar%5Crhino-1.7R4.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\charsets.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/access-bridge-32.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cshared%5Creadline%5Creadline.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-cypher-1.9.5.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/zipfs.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-graph-algo-1.9.5.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\rt.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\sunrsasign.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\jce.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunjce_provider.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunec.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-udc-1.9.5.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/ruby-debug-base-0.10.4-java/lib/ruby_debug.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/kryptproviderjdk.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\jsse.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/jopenssl.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cconcurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-jmx-1.9.5.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-lucene-index-1.9.5.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cserver-api-1.9.5.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/jaccess.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\jfr.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cshared%5Creadline%5Cjline-2.11.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/puma-2.9.0-java/lib/puma/puma_http11.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/org/bouncycastle/bcpkix-jdk15on/1.47/bcpkix-jdk15on-1.47.jar
+2014-08-23 06:15:22.504+0000 INFO  [org.neo4j]: Library path:
+    C:\Users\achal-pc\.pik\rubies\JRuby-1713\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\rails\RailsInstaller\Git\cmd
+    C:\Users\achal-pc\.pik\rubies\JRuby-1713\bin
+    C:\rails\RailsInstaller\Ruby1.9.3\lib\ruby\gems\1.9.1\bin
+    C:\rails\RailsInstaller\DevKit\bin
+    C:\Program Files (x86)\ImageMagick-6.8.2-Q16
+    C:\Program Files (x86)\Intel\iCLS Client
+    C:\Program Files\Intel\iCLS Client
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86
+    C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64
+    C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Heroku\bin
+    C:\Program Files (x86)\ruby-1.9.2\bin
+    C:\Program Files (x86)\Git\bin
+    C:\Program Files (x86)\Git\cmd
+    C:\Program Files (x86)\nodejs
+    C:\Program Files (x86)\WinMerge
+    C:\Program Files (x86)\QuickTime\QTSystem
+    C:\Program Files\Samsung\AllShare Framework DMS\1.3.23
+    C:\Program Files\Samsung\AllShare Framework DMS\1.3.23\64bit
+    C:\Program Files\MySQL\MySQL Server 5.5\bin
+    C:\Program Files\Java\jdk1.7.0_51\bin
+    C:\Ruby200-x64\bin
+    C:\Program Files\Sublime Text 2
+    C:\bin
+    C:\rails\RailsInstaller\DevKit
+    C:\Users\achal-pc\AppData\Roaming\npm
+    C:\Sites\ey
+2014-08-23 06:15:22.539+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = C:\Users\achal-pc\.pik\rubies\JRuby-1713
+    sun.boot.library.path = C:\Program Files (x86)\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.os.patch.level = 
+    user.dir = C:\Sites\ey
+    neo4j.ext.udc.source = neo4rb
+    user.variant = 
+    jdk.home = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot Client Compiler
+    jffi.boot.library.path = C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\i386-Windows;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\x86_64-Windows
+    user.home = C:\Users\achal-pc
+    user.timezone = Asia/Calcutta
+    file.encoding = Cp1252
+    jruby.script = jruby
+    user.name = achal-pc
+    jruby.shell = cmd.exe
+    sun.java.command = org.jruby.Main
+    sun.arch.data.model = 32
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+2014-08-23 06:15:22.540+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30):
+        address: fe80:0:0:0:1880:9e57:7662:1193%2
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter:
+        address: 192.168.1.8
+        address: fe80:0:0:0:1c7:d197:5570:7528%3
+    Interface Microsoft Kernel Debug Network Adapter:
+    Interface Bluetooth Device (RFCOMM Protocol TDI):
+    Interface Bluetooth Device (Personal Area Network):
+    Interface Microsoft ISATAP Adapter:
+        address: fe80:0:0:0:0:5efe:c0a8:108%7
+    Interface Microsoft ISATAP Adapter #4:
+    Interface Teredo Tunneling Pseudo-Interface:
+        address: 2001:0:5ef5:79fd:1086:21a2:8a22:8798
+        address: fe80:0:0:0:1086:21a2:8a22:8798%9
+    Interface Microsoft Wi-Fi Direct Virtual Adapter:
+        address: fe80:0:0:0:21a6:dece:be74:3c0d%10
+    Interface WAN Miniport (SSTP):
+    Interface WAN Miniport (PPPOE):
+    Interface WAN Miniport (PPTP):
+    Interface WAN Miniport (L2TP):
+    Interface WAN Miniport (IKEv2):
+    Interface WAN Miniport (IP):
+    Interface WAN Miniport (IPv6):
+    Interface WAN Miniport (Network Monitor):
+    Interface RAS Async Adapter:
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30)-QoS Packet Scheduler-0000:
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30)-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-Virtual WiFi Filter Driver-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-Native WiFi Filter Driver-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-QoS Packet Scheduler-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2014-08-23 06:15:22.648+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-08-23 06:15:22.821+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db.names non clean shutdown detected
+2014-08-23 06:15:22.837+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=152b)
+2014-08-23 06:15:22.847+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db non clean shutdown detected
+2014-08-23 06:15:22.847+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=15b)
+2014-08-23 06:15:22.849+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.strings non clean shutdown detected
+2014-08-23 06:15:22.849+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.strings] brickCount=4 brickSize=26112b mappedMem=26214400b (storeSize=104448b)
+2014-08-23 06:15:22.851+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index.keys non clean shutdown detected
+2014-08-23 06:15:22.851+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=418b)
+2014-08-23 06:15:22.856+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index non clean shutdown detected
+2014-08-23 06:15:22.856+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=99b)
+2014-08-23 06:15:22.860+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.arrays non clean shutdown detected
+2014-08-23 06:15:22.860+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.arrays] brickCount=0 brickSize=29312b mappedMem=29360128b (storeSize=128b)
+2014-08-23 06:15:22.882+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db non clean shutdown detected
+2014-08-23 06:15:22.883+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db] brickCount=6 brickSize=30381b mappedMem=30408704b (storeSize=182286b)
+2014-08-23 06:15:22.889+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshipstore.db non clean shutdown detected
+2014-08-23 06:15:22.890+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.relationshipstore.db] brickCount=5 brickSize=37719b mappedMem=37748736b (storeSize=188595b)
+2014-08-23 06:15:22.895+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.nodestore.db non clean shutdown detected
+2014-08-23 06:15:22.896+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.nodestore.db] brickCount=3 brickSize=8388b mappedMem=8388608b (storeSize=25164b)
+2014-08-23 06:15:22.902+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore non clean shutdown detected
+2014-08-23 06:15:22.903+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-08-23 06:15:22.946+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1]. Recovery started ...
+2014-08-23 06:15:22.955+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] logVersion=27 with committed tx=619
+2014-08-23 06:15:22.956+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2014-08-23 06:15:22.957+0000 INFO  [org.neo4j]: Opened logical log [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] version=27, lastTxId=-1 (recovered)
+2014-08-23 06:15:22.957+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 0 xids
+2014-08-23 06:15:22.959+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2014-08-23 06:15:23.042+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db.names rebuild id generator, highId=4 defragged count=0
+2014-08-23 06:15:23.241+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index.keys rebuild id generator, highId=11 defragged count=0
+2014-08-23 06:15:23.341+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index rebuild id generator, highId=11 defragged count=0
+2014-08-23 06:15:23.444+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.strings rebuild id generator, highId=616 defragged count=0
+2014-08-23 06:15:23.566+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2014-08-23 06:15:23.748+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db rebuild id generator, highId=3985 defragged count=0
+2014-08-23 06:15:23.857+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshipstore.db rebuild id generator, highId=5118 defragged count=0
+2014-08-23 06:15:23.957+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.nodestore.db rebuild id generator, highId=2136 defragged count=0
+2014-08-23 06:15:24.053+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore rebuild id generator, highId=6 defragged count=0
+2014-08-23 06:15:24.119+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2014-08-23 06:15:24.120+0000 INFO  [org.neo4j]: Recovery on log [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] completed.
+2014-08-23 06:15:24.134+0000 INFO  [org.neo4j]: TM opening log: C:\Sites\ey\db\neo4j-development\tm_tx_log.1
+2014-08-23 06:15:24.279+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [C:\Sites\ey\db\neo4j-development\index\lucene.log.1]. Recovery started ...
+2014-08-23 06:15:24.280+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] logVersion=27 with committed tx=618
+2014-08-23 06:15:24.281+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] entries found=0 lastEntryPos=16
+2014-08-23 06:15:24.282+0000 INFO  [org.neo4j]: Opened logical log [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] version=27, lastTxId=-1 (recovered)
+2014-08-23 06:15:24.282+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] sorting 0 xids
+2014-08-23 06:15:24.282+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2014-08-23 06:15:24.283+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] recovery completed.
+2014-08-23 06:15:24.283+0000 INFO  [org.neo4j]: Recovery on log [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] completed.
+2014-08-23 06:15:24.296+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-08-23 06:15:24.296+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1408429009965, id:1736827238965062260, store version: 13561656364791302]
+2014-08-23 06:15:24.297+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-08-23 06:15:24.297+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-08-23 06:15:24.304+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-08-23 06:15:24.304+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-08-23 06:15:24.312+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-08-23 06:15:24.314+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-08-23 06:15:24.315+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-08-23 06:15:24.315+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-08-23 06:15:24.315+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=2796 high=2795
+      RelationshipStore: used=5715 high=5714
+      RelationshipTypeStore: used=3 high=2
+      PropertyStore: used=4446 high=4445
+      PropertyIndexStore: used=11 high=10
+      StringPropertyStore: used=816 high=815
+      ArrayPropertyStore: used=1 high=0
+2014-08-23 06:15:24.316+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-08-23 06:15:24.316+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-08-23 06:15:24.317+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-08-23 06:15:24.317+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-08-23 06:15:24.327+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 199676129280 / 37857193984 / 18
+Storage files: (filename : modification date - size)
+      active_tx_log: 2014-08-23T10:16:11+0530 - 11.00 B
+      index:
+        lucene:
+          node:
+            User_exact:
+              segments.gen: 2014-08-23T10:43:01+0530 - 20.00 B
+              segments_9: 2014-08-23T10:43:01+0530 - 898.00 B
+              _hb.fdt: 2014-08-23T10:42:59+0530 - 19.16 kB
+              _hb.fdx: 2014-08-23T10:42:59+0530 - 2.14 kB
+              _hb.fnm: 2014-08-23T10:42:59+0530 - 76.00 B
+              _hb.frq: 2014-08-23T10:42:59+0530 - 1.95 kB
+              _hb.nrm: 2014-08-23T10:42:59+0530 - 278.00 B
+              _hb.prx: 2014-08-23T10:42:59+0530 - 1.09 kB
+              _hb.tii: 2014-08-23T10:42:59+0530 - 230.00 B
+              _hb.tis: 2014-08-23T10:42:59+0530 - 18.46 kB
+              _hb_1.del: 2014-08-23T10:43:00+0530 - 65.00 B
+              _hd.cfs: 2014-08-23T10:42:59+0530 - 417.00 B
+              _hf.cfs: 2014-08-23T10:43:00+0530 - 417.00 B
+              _hg.cfs: 2014-08-23T10:43:00+0530 - 1.19 kB
+            - Total: 2014-08-23T11:45:24+0530 - 46.33 kB
+          - Total: 2014-08-19T15:09:39+0530 - 46.33 kB
+          relationship:
+            Friend_exact:
+              segments.gen: 2014-08-23T10:43:02+0530 - 20.00 B
+              segments_5: 2014-08-23T10:43:02+0530 - 1.48 kB
+              _95.fdt: 2014-08-23T10:42:58+0530 - 7.43 kB
+              _95.fdx: 2014-08-23T10:42:58+0530 - 2.12 kB
+              _95.fnm: 2014-08-23T10:42:58+0530 - 56.00 B
+              _95.frq: 2014-08-23T10:42:58+0530 - 1.58 kB
+              _95.nrm: 2014-08-23T10:42:58+0530 - 817.00 B
+              _95.prx: 2014-08-23T10:42:58+0530 - 1.06 kB
+              _95.tii: 2014-08-23T10:42:58+0530 - 91.00 B
+              _95.tis: 2014-08-23T10:42:58+0530 - 3.85 kB
+              _96.cfs: 2014-08-23T10:42:58+0530 - 323.00 B
+              _97.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _98.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _99.cfs: 2014-08-23T10:43:00+0530 - 323.00 B
+              _9a.cfs: 2014-08-23T10:43:00+0530 - 323.00 B
+              _9b.cfs: 2014-08-23T10:43:01+0530 - 323.00 B
+              _9b.fdt: 2014-08-23T10:43:01+0530 - 32.00 B
+              _9b.fdx: 2014-08-23T10:43:01+0530 - 12.00 B
+            - Total: 2014-08-23T11:08:07+0530 - 20.42 kB
+            Neo4j_Rails_Relationship_exact:
+              segments.gen: 2014-08-23T10:43:01+0530 - 20.00 B
+              segments_5: 2014-08-23T10:43:01+0530 - 1.48 kB
+              _9i.fdt: 2014-08-23T10:42:58+0530 - 7.41 kB
+              _9i.fdx: 2014-08-23T10:42:58+0530 - 2.12 kB
+              _9i.fnm: 2014-08-23T10:42:58+0530 - 56.00 B
+              _9i.frq: 2014-08-23T10:42:58+0530 - 1.57 kB
+              _9i.nrm: 2014-08-23T10:42:58+0530 - 817.00 B
+              _9i.prx: 2014-08-23T10:42:58+0530 - 1.06 kB
+              _9i.tii: 2014-08-23T10:42:58+0530 - 91.00 B
+              _9i.tis: 2014-08-23T10:42:58+0530 - 3.85 kB
+              _9j.cfs: 2014-08-23T10:42:58+0530 - 323.00 B
+              _9k.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _9l.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _9m.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _9n.cfs: 2014-08-23T10:43:00+0530 - 323.00 B
+              _9o.cfs: 2014-08-23T10:43:01+0530 - 323.00 B
+              _9o.fdt: 2014-08-23T10:43:01+0530 - 32.00 B
+              _9o.fdx: 2014-08-23T10:43:01+0530 - 12.00 B
+            - Total: 2014-08-23T11:08:07+0530 - 20.39 kB
+          - Total: 2014-08-22T22:44:57+0530 - 40.82 kB
+        - Total: 2014-08-22T22:15:29+0530 - 87.15 kB
+        lucene-store.db: 2014-08-23T11:35:54+0530 - 40.00 B
+        lucene.log.1: 2014-08-23T10:43:02+0530 - 16.00 B
+        lucene.log.active: 2014-08-23T10:43:02+0530 - 4.00 B
+        lucene.log.v0: 2014-08-19T12:25:12+0530 - 16.00 B
+        lucene.log.v1: 2014-08-19T15:29:48+0530 - 197.00 B
+        lucene.log.v10: 2014-08-19T18:34:30+0530 - 16.00 B
+        lucene.log.v11: 2014-08-19T18:38:16+0530 - 16.00 B
+        lucene.log.v12: 2014-08-19T18:44:12+0530 - 16.00 B
+        lucene.log.v13: 2014-08-19T18:52:49+0530 - 16.00 B
+        lucene.log.v14: 2014-08-20T21:23:18+0530 - 621.00 B
+        lucene.log.v15: 2014-08-20T21:28:10+0530 - 16.00 B
+        lucene.log.v16: 2014-08-20T21:30:30+0530 - 16.00 B
+        lucene.log.v17: 2014-08-22T15:51:02+0530 - 16.00 B
+        lucene.log.v18: 2014-08-22T16:58:24+0530 - 16.00 B
+        lucene.log.v19: 2014-08-22T20:36:49+0530 - 931.00 B
+        lucene.log.v2: 2014-08-19T15:53:30+0530 - 16.00 B
+        lucene.log.v20: 2014-08-22T20:39:25+0530 - 16.00 B
+        lucene.log.v21: 2014-08-22T22:07:11+0530 - 1.52 kB
+        lucene.log.v22: 2014-08-22T22:49:35+0530 - 6.35 kB
+        lucene.log.v23: 2014-08-23T07:27:26+0530 - 22.79 kB
+        lucene.log.v24: 2014-08-23T08:07:45+0530 - 4.89 kB
+        lucene.log.v25: 2014-08-23T10:13:30+0530 - 40.08 kB
+        lucene.log.v26: 2014-08-23T10:43:02+0530 - 254.87 kB
+        lucene.log.v3: 2014-08-19T15:59:04+0530 - 16.00 B
+        lucene.log.v4: 2014-08-19T16:51:09+0530 - 1.07 kB
+        lucene.log.v5: 2014-08-19T17:08:33+0530 - 16.00 B
+        lucene.log.v6: 2014-08-19T17:23:08+0530 - 16.00 B
+        lucene.log.v7: 2014-08-19T17:27:59+0530 - 16.00 B
+        lucene.log.v8: 2014-08-19T18:13:02+0530 - 16.00 B
+        lucene.log.v9: 2014-08-19T18:23:57+0530 - 16.00 B
+      - Total: 2014-08-23T10:43:02+0530 - 420.75 kB
+      index.db: 2014-08-22T22:44:57+0530 - 337.00 B
+      lock: 2014-08-22T20:41:00+0530 - 0.00 B
+      messages.log: 2014-08-23T11:45:23+0530 - 1.11 MB
+      neostore: 2014-08-23T11:45:22+0530 - 54.00 B
+      neostore.id: 2014-08-23T11:45:24+0530 - 9.00 B
+      neostore.nodestore.db: 2014-08-23T10:41:15+0530 - 24.57 kB
+      neostore.nodestore.db.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.propertystore.db: 2014-08-23T10:41:15+0530 - 178.01 kB
+      neostore.propertystore.db.arrays: 2014-08-22T20:41:00+0530 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.propertystore.db.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.propertystore.db.index: 2014-08-22T22:49:30+0530 - 99.00 B
+      neostore.propertystore.db.index.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-08-22T22:49:30+0530 - 418.00 B
+      neostore.propertystore.db.index.keys.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.propertystore.db.strings: 2014-08-23T10:41:15+0530 - 102.00 kB
+      neostore.propertystore.db.strings.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.relationshipstore.db: 2014-08-23T10:41:15+0530 - 184.17 kB
+      neostore.relationshipstore.db.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.relationshiptypestore.db: 2014-08-23T11:45:23+0530 - 15.00 B
+      neostore.relationshiptypestore.db.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2014-08-22T22:49:30+0530 - 152.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-08-23T11:45:23+0530 - 9.00 B
+      nioneo_logical.log.1: 2014-08-23T10:43:00+0530 - 16.00 B
+      nioneo_logical.log.active: 2014-08-23T10:43:00+0530 - 4.00 B
+      nioneo_logical.log.v0: 2014-08-19T12:25:13+0530 - 16.00 B
+      nioneo_logical.log.v1: 2014-08-19T15:29:48+0530 - 369.00 B
+      nioneo_logical.log.v10: 2014-08-19T18:34:30+0530 - 16.00 B
+      nioneo_logical.log.v11: 2014-08-19T18:38:16+0530 - 16.00 B
+      nioneo_logical.log.v12: 2014-08-19T18:44:12+0530 - 16.00 B
+      nioneo_logical.log.v13: 2014-08-19T18:52:49+0530 - 16.00 B
+      nioneo_logical.log.v14: 2014-08-20T21:23:18+0530 - 770.00 B
+      nioneo_logical.log.v15: 2014-08-20T21:28:11+0530 - 16.00 B
+      nioneo_logical.log.v16: 2014-08-20T21:30:30+0530 - 16.00 B
+      nioneo_logical.log.v17: 2014-08-22T15:51:03+0530 - 16.00 B
+      nioneo_logical.log.v18: 2014-08-22T16:58:24+0530 - 16.00 B
+      nioneo_logical.log.v19: 2014-08-22T20:36:49+0530 - 1.55 kB
+      nioneo_logical.log.v2: 2014-08-19T15:53:30+0530 - 16.00 B
+      nioneo_logical.log.v20: 2014-08-22T20:39:26+0530 - 16.00 B
+      nioneo_logical.log.v21: 2014-08-22T22:07:11+0530 - 1.12 kB
+      nioneo_logical.log.v22: 2014-08-22T22:49:33+0530 - 3.44 kB
+      nioneo_logical.log.v23: 2014-08-23T07:27:24+0530 - 13.16 kB
+      nioneo_logical.log.v24: 2014-08-23T08:07:45+0530 - 1.85 kB
+      nioneo_logical.log.v25: 2014-08-23T10:13:30+0530 - 17.11 kB
+      nioneo_logical.log.v26: 2014-08-23T10:43:00+0530 - 294.06 kB
+      nioneo_logical.log.v3: 2014-08-19T15:59:04+0530 - 16.00 B
+      nioneo_logical.log.v4: 2014-08-19T16:51:10+0530 - 1.37 kB
+      nioneo_logical.log.v5: 2014-08-19T17:08:33+0530 - 16.00 B
+      nioneo_logical.log.v6: 2014-08-19T17:23:09+0530 - 16.00 B
+      nioneo_logical.log.v7: 2014-08-19T17:28:00+0530 - 16.00 B
+      nioneo_logical.log.v8: 2014-08-19T18:13:03+0530 - 16.00 B
+      nioneo_logical.log.v9: 2014-08-19T18:23:57+0530 - 16.00 B
+      store_lock: 2014-08-19T11:46:49+0530 - 0.00 B
+      tm_tx_log.1: 2014-08-23T11:45:24+0530 - 0.00 B
+      tm_tx_log.2: 2014-08-23T10:16:11+0530 - 29.13 kB
+2014-08-23 06:15:24.468+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-08-23 06:15:24.481+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-08-23 06:15:24.540+0000 INFO  [org.neo4j]: Database is now ready
+2014-08-23 06:15:25.403+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 319ms [total block time: 0.319s]
+2014-08-23 07:09:29.713+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 110ms [total block time: 0.429s]
+2014-08-23 07:19:44.621+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 592307ms [total block time: 592.736s]
+2014-08-23 08:34:37.269+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 110ms [total block time: 592.846s]
+2014-08-23 08:34:45.213+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 170ms [total block time: 593.016s]
+2014-08-23 08:34:47.180+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 866ms [total block time: 593.882s]
+2014-08-23 08:34:48.415+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 139ms [total block time: 594.021s]
+2014-08-23 08:34:49.900+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 984ms [total block time: 595.005s]
+2014-08-23 08:34:53.279+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 377ms [total block time: 595.382s]
+2014-08-23 08:34:55.081+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 801ms [total block time: 596.183s]
+2014-08-23 08:39:18.027+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 6480ms [total block time: 602.663s]
+2014-08-23 09:16:41.579+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 438479ms [total block time: 1041.142s]
+2014-08-23 09:26:47.548+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 154261ms [total block time: 1195.403s]
+2014-08-23 09:28:37.585+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 87969ms [total block time: 1283.372s]
+2014-08-23 09:42:48.846+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 808ms [total block time: 1284.18s]
+2014-08-23 10:50:08.932+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1843ms [total block time: 1286.023s]
+2014-08-23 11:03:39.506+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 314043ms [total block time: 1600.066s]
+2014-08-23 11:23:53.594+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1140489ms [total block time: 2740.555s]
+2014-08-23 11:26:16.233+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 152ms [total block time: 2740.707s]
+2014-08-23 11:26:17.334+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 120ms [total block time: 2740.827s]
+2014-08-23 11:26:49.681+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 127ms [total block time: 2740.954s]
+2014-08-23 11:33:26.876+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 162ms [total block time: 2741.116s]
+2014-08-23 11:39:01.415+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1375ms [total block time: 2742.491s]
+2014-08-23 11:54:52.668+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-08-23 11:54:52.675+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=29M
+    neostore.nodestore.db.mapped_memory=8M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=36M
+    neostore.propertystore.db.strings.mapped_memory=25M
+    store_dir=C:/Sites/ey/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=28M
+    migration_thread=false
+    enable_rules=true
+    storage_path=C:/Sites/ey/db/neo4j-development
+2014-08-23 11:54:52.714+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2014-08-23 11:54:52.721+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 3.89 GB
+    Free Physical memory: 995.67 MB
+    Committed virtual memory: 197.72 MB
+    Total swap space: 4.00 GB
+    Free swap space: 1.77 GB
+2014-08-23 11:54:52.758+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 28.53 MB
+    Total memory: 141.26 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen, Perm Gen [shared-ro], Perm Gen [shared-rw]]
+    Memory Pool: Code Cache (Non-heap memory): committed=5.69 MB, used=5.67 MB, max=32.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=39.00 MB, used=38.20 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=4.88 MB, used=4.54 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=97.39 MB, used=69.99 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=21.00 MB, used=20.84 MB, max=64.00 MB, threshold=0.00 B
+    Memory Pool: Perm Gen [shared-ro] (Non-heap memory): committed=10.00 MB, used=4.20 MB, max=10.00 MB, threshold=0.00 B
+    Memory Pool: Perm Gen [shared-rw] (Non-heap memory): committed=12.00 MB, used=6.30 MB, max=12.00 MB, threshold=0.00 B
+2014-08-23 11:54:52.846+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows 8; version: 6.2; arch: x86; cpus: 4
+    Process id: 1768@Achal
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Calcutta
+2014-08-23 11:54:52.853+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) Client VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.65-b04
+    JIT compiler: HotSpot Client Compiler
+    VM Arguments: [-Djdk.home=, -Djruby.home=C:\Users\achal-pc\.pik\rubies\JRuby-1713, -Djruby.script=jruby, -Djruby.shell=cmd.exe, -Djffi.boot.library.path=C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\i386-Windows;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\x86_64-Windows, -Xmx500m, -Xss2048k, -Xbootclasspath/a:C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jruby.jar]
+2014-08-23 11:54:52.856+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] C:\Program Files (x86)\Java\jre7\classes
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cgeronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cscala-library-2.10.0.jar
+     [loader.1] file:/C:/Sites/ey/
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/kryptcore.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunpkcs11.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-graph-matching-1.9.5.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\resources.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/localedata.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/dnsns.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunmscapi.jar
+     [bootstrap] C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jruby.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Clucene-core-3.6.2.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-kernel-1.9.5.jar
+     [classpath] C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip
+     [loader.1] file:/C:/Program%20Files%20(x86)/QuickTime/QTSystem/QTJava.zip
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Ctherubyrhino_jar-1.7.4%5Cjar%5Crhino-1.7R4.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\charsets.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/access-bridge-32.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cshared%5Creadline%5Creadline.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-cypher-1.9.5.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/zipfs.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-graph-algo-1.9.5.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\rt.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\sunrsasign.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\jce.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunjce_provider.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/sunec.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-udc-1.9.5.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/ruby-debug-base-0.10.4-java/lib/ruby_debug.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/kryptproviderjdk.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\jsse.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/jopenssl.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cconcurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-jmx-1.9.5.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cneo4j-lucene-index-1.9.5.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cgems%5Cshared%5Cgems%5Cneo4j-community-1.9.5-java%5Clib%5Cneo4j-community%5Cjars%5Cserver-api-1.9.5.jar
+     [loader.2] file:/C:/Program%20Files%20(x86)/Java/jre7/lib/ext/jaccess.jar
+     [bootstrap] C:\Program Files (x86)\Java\jre7\lib\jfr.jar
+     [loader.0] file:C:%5CUsers%5Cachal-pc%5C.pik%5Crubies%5CJRuby-1713%5Clib%5Cruby%5Cshared%5Creadline%5Cjline-2.11.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/gems/shared/gems/puma-2.9.0-java/lib/puma/puma_http11.jar
+     [loader.0] file:C:/Users/achal-pc/.pik/rubies/JRuby-1713/lib/ruby/shared/org/bouncycastle/bcpkix-jdk15on/1.47/bcpkix-jdk15on-1.47.jar
+2014-08-23 11:54:52.990+0000 INFO  [org.neo4j]: Library path:
+    C:\Users\achal-pc\.pik\rubies\JRuby-1713\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\rails\RailsInstaller\Git\cmd
+    C:\Users\achal-pc\.pik\rubies\JRuby-1713\bin
+    C:\rails\RailsInstaller\Ruby1.9.3\lib\ruby\gems\1.9.1\bin
+    C:\rails\RailsInstaller\DevKit\bin
+    C:\Program Files (x86)\ImageMagick-6.8.2-Q16
+    C:\Program Files (x86)\Intel\iCLS Client
+    C:\Program Files\Intel\iCLS Client
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86
+    C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64
+    C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Heroku\bin
+    C:\Program Files (x86)\ruby-1.9.2\bin
+    C:\Program Files (x86)\Git\bin
+    C:\Program Files (x86)\Git\cmd
+    C:\Program Files (x86)\nodejs
+    C:\Program Files (x86)\WinMerge
+    C:\Program Files (x86)\QuickTime\QTSystem
+    C:\Program Files\Samsung\AllShare Framework DMS\1.3.23
+    C:\Program Files\Samsung\AllShare Framework DMS\1.3.23\64bit
+    C:\Program Files\MySQL\MySQL Server 5.5\bin
+    C:\Program Files\Java\jdk1.7.0_51\bin
+    C:\Ruby200-x64\bin
+    C:\Program Files\Sublime Text 2
+    C:\bin
+    C:\rails\RailsInstaller\DevKit
+    C:\Users\achal-pc\AppData\Roaming\npm
+    C:\Sites\ey
+2014-08-23 11:54:53.160+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = C:\Users\achal-pc\.pik\rubies\JRuby-1713
+    sun.boot.library.path = C:\Program Files (x86)\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.os.patch.level = 
+    user.dir = C:\Sites\ey
+    neo4j.ext.udc.source = neo4rb
+    user.variant = 
+    jdk.home = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot Client Compiler
+    jffi.boot.library.path = C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\i386-Windows;C:\Users\achal-pc\.pik\rubies\JRuby-1713\lib\jni\x86_64-Windows
+    user.home = C:\Users\achal-pc
+    user.timezone = Asia/Calcutta
+    file.encoding = Cp1252
+    jruby.script = jruby
+    user.name = achal-pc
+    jruby.shell = cmd.exe
+    sun.java.command = org.jruby.Main
+    sun.arch.data.model = 32
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+2014-08-23 11:54:53.163+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30):
+        address: fe80:0:0:0:1880:9e57:7662:1193%2
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter:
+        address: 192.168.43.178
+        address: fe80:0:0:0:1c7:d197:5570:7528%3
+    Interface Microsoft Kernel Debug Network Adapter:
+    Interface Bluetooth Device (RFCOMM Protocol TDI):
+    Interface Bluetooth Device (Personal Area Network):
+    Interface Microsoft ISATAP Adapter:
+    Interface Microsoft ISATAP Adapter #4:
+        address: fe80:0:0:0:0:5efe:c0a8:2bb2%8
+    Interface Teredo Tunneling Pseudo-Interface:
+        address: 2001:0:9d38:6abd:4e:eba7:201c:84b4
+        address: fe80:0:0:0:4e:eba7:201c:84b4%9
+    Interface Microsoft Wi-Fi Direct Virtual Adapter:
+        address: fe80:0:0:0:21a6:dece:be74:3c0d%10
+    Interface WAN Miniport (SSTP):
+    Interface WAN Miniport (PPPOE):
+    Interface WAN Miniport (PPTP):
+    Interface WAN Miniport (L2TP):
+    Interface WAN Miniport (IKEv2):
+    Interface WAN Miniport (IP):
+    Interface WAN Miniport (IPv6):
+    Interface WAN Miniport (Network Monitor):
+    Interface RAS Async Adapter:
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30)-QoS Packet Scheduler-0000:
+    Interface Qualcomm Atheros AR8162/8166/8168 PCI-E Fast Ethernet Controller (NDIS 6.30)-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-Virtual WiFi Filter Driver-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-Native WiFi Filter Driver-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-QoS Packet Scheduler-0000:
+    Interface Qualcomm Atheros AR9485WB-EG Wireless Network Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2014-08-23 11:54:53.723+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-08-23 11:54:54.658+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db.names non clean shutdown detected
+2014-08-23 11:54:54.713+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=152b)
+2014-08-23 11:54:54.742+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db non clean shutdown detected
+2014-08-23 11:54:54.743+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=15b)
+2014-08-23 11:54:54.765+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.strings non clean shutdown detected
+2014-08-23 11:54:54.767+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.strings] brickCount=4 brickSize=26112b mappedMem=26214400b (storeSize=104448b)
+2014-08-23 11:54:54.787+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index.keys non clean shutdown detected
+2014-08-23 11:54:54.788+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=418b)
+2014-08-23 11:54:54.819+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index non clean shutdown detected
+2014-08-23 11:54:54.820+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=99b)
+2014-08-23 11:54:54.830+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.arrays non clean shutdown detected
+2014-08-23 11:54:54.831+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.arrays] brickCount=0 brickSize=29312b mappedMem=29360128b (storeSize=128b)
+2014-08-23 11:54:54.915+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db non clean shutdown detected
+2014-08-23 11:54:54.916+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.propertystore.db] brickCount=6 brickSize=30381b mappedMem=30408704b (storeSize=182286b)
+2014-08-23 11:54:54.943+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshipstore.db non clean shutdown detected
+2014-08-23 11:54:54.945+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.relationshipstore.db] brickCount=5 brickSize=37719b mappedMem=37748736b (storeSize=188595b)
+2014-08-23 11:54:54.961+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.nodestore.db non clean shutdown detected
+2014-08-23 11:54:54.962+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore.nodestore.db] brickCount=3 brickSize=8388b mappedMem=8388608b (storeSize=25164b)
+2014-08-23 11:54:54.984+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore non clean shutdown detected
+2014-08-23 11:54:54.986+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-08-23 11:54:55.148+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1]. Recovery started ...
+2014-08-23 11:54:55.199+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] logVersion=27 with committed tx=619
+2014-08-23 11:54:55.202+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2014-08-23 11:54:55.203+0000 INFO  [org.neo4j]: Opened logical log [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] version=27, lastTxId=-1 (recovered)
+2014-08-23 11:54:55.204+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 0 xids
+2014-08-23 11:54:55.209+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2014-08-23 11:54:55.331+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshiptypestore.db.names rebuild id generator, highId=4 defragged count=0
+2014-08-23 11:54:55.537+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index.keys rebuild id generator, highId=11 defragged count=0
+2014-08-23 11:54:55.647+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.index rebuild id generator, highId=11 defragged count=0
+2014-08-23 11:54:55.769+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.strings rebuild id generator, highId=616 defragged count=0
+2014-08-23 11:54:55.893+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2014-08-23 11:54:56.208+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.propertystore.db rebuild id generator, highId=3985 defragged count=0
+2014-08-23 11:54:56.595+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.relationshipstore.db rebuild id generator, highId=5118 defragged count=0
+2014-08-23 11:54:56.985+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore.nodestore.db rebuild id generator, highId=2136 defragged count=0
+2014-08-23 11:54:57.411+0000 INFO  [org.neo4j]: C:\Sites\ey\db\neo4j-development\neostore rebuild id generator, highId=6 defragged count=0
+2014-08-23 11:54:57.616+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2014-08-23 11:54:57.617+0000 INFO  [org.neo4j]: Recovery on log [C:\Sites\ey\db\neo4j-development\nioneo_logical.log.1] completed.
+2014-08-23 11:54:57.687+0000 INFO  [org.neo4j]: TM opening log: C:\Sites\ey\db\neo4j-development\tm_tx_log.1
+2014-08-23 11:55:00.295+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [C:\Sites\ey\db\neo4j-development\index\lucene.log.1]. Recovery started ...
+2014-08-23 11:55:00.296+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] logVersion=27 with committed tx=618
+2014-08-23 11:55:00.298+0000 INFO  [org.neo4j]: [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] entries found=0 lastEntryPos=16
+2014-08-23 11:55:00.299+0000 INFO  [org.neo4j]: Opened logical log [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] version=27, lastTxId=-1 (recovered)
+2014-08-23 11:55:00.301+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] sorting 0 xids
+2014-08-23 11:55:00.303+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2014-08-23 11:55:00.303+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] recovery completed.
+2014-08-23 11:55:00.306+0000 INFO  [org.neo4j]: Recovery on log [C:\Sites\ey\db\neo4j-development\index\lucene.log.1] completed.
+2014-08-23 11:55:00.485+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-08-23 11:55:00.487+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1408429009965, id:1736827238965062260, store version: 13561656364791302]
+2014-08-23 11:55:00.488+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-08-23 11:55:00.489+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-08-23 11:55:00.505+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-08-23 11:55:00.506+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-08-23 11:55:00.531+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-08-23 11:55:00.537+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-08-23 11:55:00.538+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-08-23 11:55:00.540+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-08-23 11:55:00.540+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=2796 high=2795
+      RelationshipStore: used=5715 high=5714
+      RelationshipTypeStore: used=3 high=2
+      PropertyStore: used=4446 high=4445
+      PropertyIndexStore: used=11 high=10
+      StringPropertyStore: used=816 high=815
+      ArrayPropertyStore: used=1 high=0
+2014-08-23 11:55:00.543+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-08-23 11:55:00.545+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-08-23 11:55:00.545+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-08-23 11:55:00.548+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-08-23 11:55:00.572+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 199676129280 / 37598662656 / 18
+Storage files: (filename : modification date - size)
+      active_tx_log: 2014-08-23T10:16:11+0530 - 11.00 B
+      index:
+        lucene:
+          node:
+            User_exact:
+              segments.gen: 2014-08-23T10:43:01+0530 - 20.00 B
+              segments_9: 2014-08-23T10:43:01+0530 - 898.00 B
+              _hb.fdt: 2014-08-23T10:42:59+0530 - 19.16 kB
+              _hb.fdx: 2014-08-23T10:42:59+0530 - 2.14 kB
+              _hb.fnm: 2014-08-23T10:42:59+0530 - 76.00 B
+              _hb.frq: 2014-08-23T10:42:59+0530 - 1.95 kB
+              _hb.nrm: 2014-08-23T10:42:59+0530 - 278.00 B
+              _hb.prx: 2014-08-23T10:42:59+0530 - 1.09 kB
+              _hb.tii: 2014-08-23T10:42:59+0530 - 230.00 B
+              _hb.tis: 2014-08-23T10:42:59+0530 - 18.46 kB
+              _hb_1.del: 2014-08-23T10:43:00+0530 - 65.00 B
+              _hd.cfs: 2014-08-23T10:42:59+0530 - 417.00 B
+              _hf.cfs: 2014-08-23T10:43:00+0530 - 417.00 B
+              _hg.cfs: 2014-08-23T10:43:00+0530 - 1.19 kB
+            - Total: 2014-08-23T17:24:58+0530 - 46.33 kB
+          - Total: 2014-08-19T15:09:39+0530 - 46.33 kB
+          relationship:
+            Friend_exact:
+              segments.gen: 2014-08-23T10:43:02+0530 - 20.00 B
+              segments_5: 2014-08-23T10:43:02+0530 - 1.48 kB
+              _95.fdt: 2014-08-23T10:42:58+0530 - 7.43 kB
+              _95.fdx: 2014-08-23T10:42:58+0530 - 2.12 kB
+              _95.fnm: 2014-08-23T10:42:58+0530 - 56.00 B
+              _95.frq: 2014-08-23T10:42:58+0530 - 1.58 kB
+              _95.nrm: 2014-08-23T10:42:58+0530 - 817.00 B
+              _95.prx: 2014-08-23T10:42:58+0530 - 1.06 kB
+              _95.tii: 2014-08-23T10:42:58+0530 - 91.00 B
+              _95.tis: 2014-08-23T10:42:58+0530 - 3.85 kB
+              _96.cfs: 2014-08-23T10:42:58+0530 - 323.00 B
+              _97.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _98.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _99.cfs: 2014-08-23T10:43:00+0530 - 323.00 B
+              _9a.cfs: 2014-08-23T10:43:00+0530 - 323.00 B
+              _9b.cfs: 2014-08-23T10:43:01+0530 - 323.00 B
+              _9b.fdt: 2014-08-23T10:43:01+0530 - 32.00 B
+              _9b.fdx: 2014-08-23T10:43:01+0530 - 12.00 B
+            - Total: 2014-08-23T11:08:07+0530 - 20.42 kB
+            Neo4j_Rails_Relationship_exact:
+              segments.gen: 2014-08-23T10:43:01+0530 - 20.00 B
+              segments_5: 2014-08-23T10:43:01+0530 - 1.48 kB
+              _9i.fdt: 2014-08-23T10:42:58+0530 - 7.41 kB
+              _9i.fdx: 2014-08-23T10:42:58+0530 - 2.12 kB
+              _9i.fnm: 2014-08-23T10:42:58+0530 - 56.00 B
+              _9i.frq: 2014-08-23T10:42:58+0530 - 1.57 kB
+              _9i.nrm: 2014-08-23T10:42:58+0530 - 817.00 B
+              _9i.prx: 2014-08-23T10:42:58+0530 - 1.06 kB
+              _9i.tii: 2014-08-23T10:42:58+0530 - 91.00 B
+              _9i.tis: 2014-08-23T10:42:58+0530 - 3.85 kB
+              _9j.cfs: 2014-08-23T10:42:58+0530 - 323.00 B
+              _9k.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _9l.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _9m.cfs: 2014-08-23T10:42:59+0530 - 323.00 B
+              _9n.cfs: 2014-08-23T10:43:00+0530 - 323.00 B
+              _9o.cfs: 2014-08-23T10:43:01+0530 - 323.00 B
+              _9o.fdt: 2014-08-23T10:43:01+0530 - 32.00 B
+              _9o.fdx: 2014-08-23T10:43:01+0530 - 12.00 B
+            - Total: 2014-08-23T11:08:07+0530 - 20.39 kB
+          - Total: 2014-08-22T22:44:57+0530 - 40.82 kB
+        - Total: 2014-08-22T22:15:29+0530 - 87.15 kB
+        lucene-store.db: 2014-08-23T17:20:52+0530 - 40.00 B
+        lucene.log.1: 2014-08-23T10:43:02+0530 - 16.00 B
+        lucene.log.active: 2014-08-23T10:43:02+0530 - 4.00 B
+        lucene.log.v0: 2014-08-19T12:25:12+0530 - 16.00 B
+        lucene.log.v1: 2014-08-19T15:29:48+0530 - 197.00 B
+        lucene.log.v10: 2014-08-19T18:34:30+0530 - 16.00 B
+        lucene.log.v11: 2014-08-19T18:38:16+0530 - 16.00 B
+        lucene.log.v12: 2014-08-19T18:44:12+0530 - 16.00 B
+        lucene.log.v13: 2014-08-19T18:52:49+0530 - 16.00 B
+        lucene.log.v14: 2014-08-20T21:23:18+0530 - 621.00 B
+        lucene.log.v15: 2014-08-20T21:28:10+0530 - 16.00 B
+        lucene.log.v16: 2014-08-20T21:30:30+0530 - 16.00 B
+        lucene.log.v17: 2014-08-22T15:51:02+0530 - 16.00 B
+        lucene.log.v18: 2014-08-22T16:58:24+0530 - 16.00 B
+        lucene.log.v19: 2014-08-22T20:36:49+0530 - 931.00 B
+        lucene.log.v2: 2014-08-19T15:53:30+0530 - 16.00 B
+        lucene.log.v20: 2014-08-22T20:39:25+0530 - 16.00 B
+        lucene.log.v21: 2014-08-22T22:07:11+0530 - 1.52 kB
+        lucene.log.v22: 2014-08-22T22:49:35+0530 - 6.35 kB
+        lucene.log.v23: 2014-08-23T07:27:26+0530 - 22.79 kB
+        lucene.log.v24: 2014-08-23T08:07:45+0530 - 4.89 kB
+        lucene.log.v25: 2014-08-23T10:13:30+0530 - 40.08 kB
+        lucene.log.v26: 2014-08-23T10:43:02+0530 - 254.87 kB
+        lucene.log.v3: 2014-08-19T15:59:04+0530 - 16.00 B
+        lucene.log.v4: 2014-08-19T16:51:09+0530 - 1.07 kB
+        lucene.log.v5: 2014-08-19T17:08:33+0530 - 16.00 B
+        lucene.log.v6: 2014-08-19T17:23:08+0530 - 16.00 B
+        lucene.log.v7: 2014-08-19T17:27:59+0530 - 16.00 B
+        lucene.log.v8: 2014-08-19T18:13:02+0530 - 16.00 B
+        lucene.log.v9: 2014-08-19T18:23:57+0530 - 16.00 B
+      - Total: 2014-08-23T10:43:02+0530 - 420.75 kB
+      index.db: 2014-08-22T22:44:57+0530 - 337.00 B
+      lock: 2014-08-22T20:41:00+0530 - 0.00 B
+      messages.log: 2014-08-23T17:20:51+0530 - 1.15 MB
+      neostore: 2014-08-23T17:24:55+0530 - 54.00 B
+      neostore.id: 2014-08-23T17:24:57+0530 - 9.00 B
+      neostore.nodestore.db: 2014-08-23T10:41:15+0530 - 24.57 kB
+      neostore.nodestore.db.id: 2014-08-23T17:24:57+0530 - 9.00 B
+      neostore.propertystore.db: 2014-08-23T10:41:15+0530 - 178.01 kB
+      neostore.propertystore.db.arrays: 2014-08-22T20:41:00+0530 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2014-08-23T17:24:55+0530 - 9.00 B
+      neostore.propertystore.db.id: 2014-08-23T17:24:56+0530 - 9.00 B
+      neostore.propertystore.db.index: 2014-08-22T22:49:30+0530 - 99.00 B
+      neostore.propertystore.db.index.id: 2014-08-23T17:24:55+0530 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-08-22T22:49:30+0530 - 418.00 B
+      neostore.propertystore.db.index.keys.id: 2014-08-23T17:24:55+0530 - 9.00 B
+      neostore.propertystore.db.strings: 2014-08-23T10:41:15+0530 - 102.00 kB
+      neostore.propertystore.db.strings.id: 2014-08-23T17:24:55+0530 - 9.00 B
+      neostore.relationshipstore.db: 2014-08-23T10:41:15+0530 - 184.17 kB
+      neostore.relationshipstore.db.id: 2014-08-23T17:24:56+0530 - 9.00 B
+      neostore.relationshiptypestore.db: 2014-08-23T17:24:55+0530 - 15.00 B
+      neostore.relationshiptypestore.db.id: 2014-08-23T17:24:55+0530 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2014-08-22T22:49:30+0530 - 152.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-08-23T17:24:55+0530 - 9.00 B
+      nioneo_logical.log.1: 2014-08-23T10:43:00+0530 - 16.00 B
+      nioneo_logical.log.active: 2014-08-23T10:43:00+0530 - 4.00 B
+      nioneo_logical.log.v0: 2014-08-19T12:25:13+0530 - 16.00 B
+      nioneo_logical.log.v1: 2014-08-19T15:29:48+0530 - 369.00 B
+      nioneo_logical.log.v10: 2014-08-19T18:34:30+0530 - 16.00 B
+      nioneo_logical.log.v11: 2014-08-19T18:38:16+0530 - 16.00 B
+      nioneo_logical.log.v12: 2014-08-19T18:44:12+0530 - 16.00 B
+      nioneo_logical.log.v13: 2014-08-19T18:52:49+0530 - 16.00 B
+      nioneo_logical.log.v14: 2014-08-20T21:23:18+0530 - 770.00 B
+      nioneo_logical.log.v15: 2014-08-20T21:28:11+0530 - 16.00 B
+      nioneo_logical.log.v16: 2014-08-20T21:30:30+0530 - 16.00 B
+      nioneo_logical.log.v17: 2014-08-22T15:51:03+0530 - 16.00 B
+      nioneo_logical.log.v18: 2014-08-22T16:58:24+0530 - 16.00 B
+      nioneo_logical.log.v19: 2014-08-22T20:36:49+0530 - 1.55 kB
+      nioneo_logical.log.v2: 2014-08-19T15:53:30+0530 - 16.00 B
+      nioneo_logical.log.v20: 2014-08-22T20:39:26+0530 - 16.00 B
+      nioneo_logical.log.v21: 2014-08-22T22:07:11+0530 - 1.12 kB
+      nioneo_logical.log.v22: 2014-08-22T22:49:33+0530 - 3.44 kB
+      nioneo_logical.log.v23: 2014-08-23T07:27:24+0530 - 13.16 kB
+      nioneo_logical.log.v24: 2014-08-23T08:07:45+0530 - 1.85 kB
+      nioneo_logical.log.v25: 2014-08-23T10:13:30+0530 - 17.11 kB
+      nioneo_logical.log.v26: 2014-08-23T10:43:00+0530 - 294.06 kB
+      nioneo_logical.log.v3: 2014-08-19T15:59:04+0530 - 16.00 B
+      nioneo_logical.log.v4: 2014-08-19T16:51:10+0530 - 1.37 kB
+      nioneo_logical.log.v5: 2014-08-19T17:08:33+0530 - 16.00 B
+      nioneo_logical.log.v6: 2014-08-19T17:23:09+0530 - 16.00 B
+      nioneo_logical.log.v7: 2014-08-19T17:28:00+0530 - 16.00 B
+      nioneo_logical.log.v8: 2014-08-19T18:13:03+0530 - 16.00 B
+      nioneo_logical.log.v9: 2014-08-19T18:23:57+0530 - 16.00 B
+      store_lock: 2014-08-19T11:46:49+0530 - 0.00 B
+      tm_tx_log.1: 2014-08-23T17:24:57+0530 - 0.00 B
+      tm_tx_log.2: 2014-08-23T10:16:11+0530 - 29.13 kB
+2014-08-23 11:55:01.662+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-08-23 11:55:01.745+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-08-23 11:55:01.787+0000 INFO  [org.neo4j]: Database is now ready
+2014-08-23 11:55:08.061+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 798ms [total block time: 0.798s]
+2014-08-23 11:59:38.326+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1030ms [total block time: 1.828s]
+2014-08-23 12:07:30.057+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1250ms [total block time: 3.078s]
+2014-08-23 12:17:09.825+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 838ms [total block time: 3.916s]
+2014-08-23 13:19:30.676+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3390774ms [total block time: 3394.69s]
+2014-08-23 14:04:30.332+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 596ms [total block time: 3395.286s]
+2014-08-23 14:18:30.009+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 322ms [total block time: 3395.608s]
+2014-08-23 14:39:56.715+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 556ms [total block time: 3396.164s]
+2014-08-23 15:10:13.330+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 639ms [total block time: 3396.803s]
+2014-08-23 16:27:11.676+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 4231ms [total block time: 3401.034s]
+2014-08-23 16:41:40.498+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 131ms [total block time: 3401.165s]
+2014-08-23 17:02:49.096+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 106ms [total block time: 3401.271s]
+2014-08-23 17:08:50.413+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1093ms [total block time: 3402.364s]
+2014-08-24 03:23:19.592+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 31983616ms [total block time: 35385.98s]
+2014-08-24 03:24:38.858+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 344ms [total block time: 35386.324s]
+2014-08-24 03:25:06.020+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 375ms [total block time: 35386.7s]
+2014-08-24 03:37:40.608+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 21419ms [total block time: 35408.12s]
+2014-08-24 03:39:39.483+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3746ms [total block time: 35411.863s]
+2014-08-24 03:40:05.772+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 2372ms [total block time: 35414.234s]
+2014-08-24 03:40:35.545+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3644ms [total block time: 35417.88s]
+2014-08-24 03:40:39.292+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3647ms [total block time: 35421.527s]
+2014-08-24 03:40:42.522+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3129ms [total block time: 35424.656s]
+2014-08-24 03:40:44.153+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1530ms [total block time: 35426.184s]
+2014-08-24 03:40:51.284+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 2627ms [total block time: 35428.812s]
+2014-08-24 03:40:54.464+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 2178ms [total block time: 35430.992s]
+2014-08-24 03:40:58.949+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 2083ms [total block time: 35433.07s]
+2014-08-24 03:41:08.602+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 2348ms [total block time: 35435.426s]
+2014-08-24 03:41:29.208+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3648ms [total block time: 35439.07s]
+2014-08-24 03:41:30.342+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1033ms [total block time: 35440.105s]
+2014-08-24 03:41:45.905+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1550ms [total block time: 35441.652s]
+2014-08-24 03:41:52.970+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 759ms [total block time: 35442.41s]
+2014-08-24 03:41:59.971+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 487ms [total block time: 35442.9s]
+2014-08-24 03:42:06.526+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 945ms [total block time: 35443.844s]
+2014-08-24 03:42:12.310+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 679ms [total block time: 35444.523s]
+2014-08-24 03:42:16.282+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 770ms [total block time: 35445.293s]
+2014-08-24 03:42:19.215+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 831ms [total block time: 35446.125s]
+2014-08-24 03:42:25.018+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 298ms [total block time: 35446.426s]
+2014-08-24 03:42:31.338+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 815ms [total block time: 35447.234s]
+2014-08-24 03:42:37.957+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1014ms [total block time: 35448.254s]
+2014-08-24 03:42:44.029+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 768ms [total block time: 35449.02s]
+2014-08-24 03:42:50.217+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 585ms [total block time: 35449.605s]
+2014-08-24 03:43:41.547+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 385ms [total block time: 35449.99s]
+2014-08-24 03:43:44.950+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 400ms [total block time: 35450.387s]
+2014-08-24 03:43:46.169+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 317ms [total block time: 35450.703s]
+2014-08-24 03:43:51.897+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 719ms [total block time: 35451.426s]
+2014-08-24 03:43:57.860+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 559ms [total block time: 35451.984s]
+2014-08-24 03:44:08.446+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 179ms [total block time: 35452.164s]
+2014-08-24 03:44:10.176+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 429ms [total block time: 35452.594s]
+2014-08-24 03:44:10.826+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 148ms [total block time: 35452.74s]
+2014-08-24 03:44:16.566+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 637ms [total block time: 35453.375s]
+2014-08-24 03:44:21.877+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 207ms [total block time: 35453.586s]
+2014-08-24 03:48:27.984+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 148ms [total block time: 35453.73s]
+2014-08-24 03:48:30.968+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 132ms [total block time: 35453.863s]
+2014-08-24 03:50:39.191+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 121965ms [total block time: 35575.83s]
+2014-08-24 03:53:56.818+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 140ms [total block time: 35575.97s]
+2014-08-24 04:02:32.116+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 221ms [total block time: 35576.19s]
+2014-08-24 05:08:48.777+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 115ms [total block time: 35576.305s]
+2014-08-24 05:12:41.997+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 1658ms [total block time: 35577.965s]
+2014-08-24 05:12:44.119+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 119ms [total block time: 35578.08s]
+2014-08-24 05:43:31.776+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 177ms [total block time: 35578.26s]
+2014-08-24 06:22:38.261+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 3166ms [total block time: 35581.426s]

@@ -1,5 +1,6 @@
 
-$(document).ready(function(){/* off-canvas sidebar toggle */
+	/* off-canvas sidebar toggle */
+$(document).ready(function(){
 
 $('[data-toggle=offcanvas]').click(function() {
   	$(this).toggleClass('visible-xs text-center');
