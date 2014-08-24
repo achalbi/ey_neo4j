@@ -74,7 +74,7 @@ gem 'faker', '1.0.1'
 gem 'jquery-turbolinks'
 gem 'purecss'
 
-#gem 'puma'
+gem 'puma'
 
 group :production do
   gem 'rails_12factor'
