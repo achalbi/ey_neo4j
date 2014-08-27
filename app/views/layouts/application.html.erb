@@ -102,7 +102,7 @@
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.1' // use version 2.1
+    version    : 'v2.0' // use version 2.1
   });
 
   // Now that we've initialized the JavaScript SDK, we call 
@@ -131,13 +131,13 @@
         // and signed request each expire
         var uid = response.authResponse.userID;
         var accessToken = response.authResponse.accessToken;
-        return FB.logout(); 
       } else if (response.status === 'not_authorized') {
         // the user is logged in to Facebook, 
         // but has not authenticated your app
       } else {
         // the user isn't logged in to Facebook.
       }
+        return FB.logout(); 
    });
     return true;
   });

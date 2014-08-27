@@ -23,11 +23,21 @@ class UsersController < ApplicationController
   end
 
   def friends
-    @friends = current_user.friends.paginate(:page => params[:page], :per_page => 8)
+    @friends = []
+    unless current_user.gender == 'male'
+        @friends = current_user.friend_boys.paginate(:page => params[:page], :per_page => 8)
+    else
+        @friends = current_user.friend_girls.paginate(:page => params[:page], :per_page => 8)
+    end
   end
 
   def page_friends
-    @friends = current_user.friends.paginate(:page => params[:page], :per_page => 8)
+        @friends = []
+    unless current_user.gender == 'male'
+        @friends = current_user.friend_boys.paginate(:page => params[:page], :per_page => 8)
+    else
+        @friends = current_user.friend_girls.paginate(:page => params[:page], :per_page => 8)
+    end
   end
 
   # GET /users

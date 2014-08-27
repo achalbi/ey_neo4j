@@ -15,6 +15,8 @@ class User < Neo4j::Rails::Model
   validates :email, :uniqueness => true
 
   has_n(:friends).to(User).relationship(Friend)
+  has_n(:friend_girls).to(User).relationship(Friend_girl)
+  has_n(:friend_boys).to(User).relationship(Friend_boy)
 
   def self.create_with_omniauth(auth)
     create! do |user|
